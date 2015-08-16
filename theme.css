@@ -54,7 +54,7 @@ a:hover
 
 .container #logo
 {
-	margin-left: 100px;
+	margin-left: 90px;
 	width: 1200px;
 }
 
@@ -144,6 +144,7 @@ a:hover
 {
 	margin-top: 22px;
 	margin-left: 10px;
+	border-radius: 7px;
 }
 
 p, h2 
