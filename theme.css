@@ -1,0 +1,24 @@
+body {
+  background: #0A212E;
+  margin: 0px;
+  overflow: hidden;
+  animation: color-loop 60s infinite;
+}
+
+@keyframes color-loop {
+  0% {
+    background: #2CAB5B;
+  }
+  25% {
+    background: #FABC03;
+  }
+  50% {
+    background: #ED4B40;
+  }
+  75% {
+    background: #4286F3;
+  }
+  100% {
+    background: #2CAB5B;
+  }
+}
