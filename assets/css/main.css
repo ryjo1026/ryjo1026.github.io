@@ -1,0 +1,47 @@
+h1{
+  font-family: 'Abel', sans-serif;
+}
+
+.jumbotron-content{
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.intro{
+  font-size: 500%;
+}
+
+.description{
+  text-align: center;
+  max-width: 50%;
+  margin: 0px auto;
+}
+
+.jumbotron{
+  background-position: top;
+  background-image: url("../img/jumbotron-background.jpg");
+  background-size: cover;
+  background: contain;
+  width: 100%;
+  height: 667px;
+}
+
+/*Color Looping Script*/
+@keyframes color-loop {
+  0% {
+    background: #2CAB5B;
+  }
+  25% {
+    background: #FABC03;
+  }
+  50% {
+    background: #ED4B40;
+  }
+  75% {
+    background: #4286F3;
+  }
+  100% {
+    background: #2CAB5B;
+  }
+}
