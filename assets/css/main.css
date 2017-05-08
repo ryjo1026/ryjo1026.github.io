@@ -8,6 +8,15 @@ h1{
   transform: translateY(-50%);
 }
 
+.jumbotron-social{
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin: 0px auto;
+  letter-spacing: 20px;
+}
+
 .intro{
   font-size: 500%;
 }
