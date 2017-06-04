@@ -36,6 +36,28 @@ h1{
   height: 667px;
 }
 
+.social-icon:hover{
+  color: #000000;
+  background-color: #000000;
+}
+
+.resume-text{
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+}
+
+.portrait{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+}
+
+.resume-wrapper{
+  overflow: hidden;
+  position: relative;
+  top: -50px;
+}
+
 /*Color Looping Script*/
 @keyframes color-loop {
   0% {
