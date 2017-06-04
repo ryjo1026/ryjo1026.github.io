@@ -1,5 +1,11 @@
+@import "materialize.css";
+
 h1{
   font-family: 'Abel', sans-serif;
+}
+
+ul {
+  list-style-type: circle;
 }
 
 .jumbotron-content{
@@ -27,12 +33,13 @@ h1{
   margin: 0px auto;
 }
 
-.jumbotron{
+#jumbotron{
   background-position: top;
+  background-repeat: no-repeat;
   background-image: url("../img/jumbotron-background.jpg");
-  background-size: cover;
-  background: contain;
-  width: 100%;
+	background-position: center center;
+	background-size: cover;
+  width:100%;
   height: 667px;
 }
 
@@ -45,6 +52,12 @@ h1{
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   float: left;
+  padding-left:3px;
+  margin-bottom: 25px;
+}
+
+.section{
+  padding-left: 10px;
 }
 
 .portrait{

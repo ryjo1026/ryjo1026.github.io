@@ -2644,14 +2644,6 @@ html {
   box-sizing: inherit;
 }
 
-ul {
-  list-style-type: none;
-}
-
-ul.browser-default {
-  list-style-type: initial;
-}
-
 a {
   color: #039be5;
   text-decoration: none;
@@ -2673,10 +2665,6 @@ a {
 
 ul {
   padding: 0;
-}
-
-ul li {
-  list-style-type: none;
 }
 
 .clearfix {
