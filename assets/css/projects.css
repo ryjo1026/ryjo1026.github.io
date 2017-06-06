@@ -1,0 +1,47 @@
+@import "materialize.css";
+
+h1{
+  font-family: 'Abel', sans-serif;
+}
+
+ul{
+  list-style-type: circle;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+footer{
+  list-style-type: none;
+}
+
+ul.browser-default {
+  list-style-type: initial;
+}
+
+.intro{
+  font-size: 500%;
+}
+
+.description{
+  text-align: center;
+  max-width: 50%;
+  margin: 0px auto;
+}
+
+#jumbotron{
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url("../img/projects-banner.jpg");
+	background-position: center center;
+	background-size: cover;
+  width:100%;
+  height: 667px;
+}
+
+.jumbotron-content{
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+}

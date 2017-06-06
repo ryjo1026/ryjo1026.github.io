@@ -8,6 +8,18 @@ ul {
   list-style-type: circle;
 }
 
+nav ul li {
+  list-style-type: none;
+}
+
+footer{
+  list-style-type: none;
+}
+
+ul.browser-default {
+  list-style-type: initial;
+}
+
 .jumbotron-content{
   position: relative;
   top: 30%;
@@ -69,6 +81,10 @@ ul {
   overflow: hidden;
   position: relative;
   top: -50px;
+}
+
+.skills-table progress{
+  line-height: 14px;
 }
 
 /*Color Looping Script*/
