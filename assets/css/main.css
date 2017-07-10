@@ -4,10 +4,6 @@ h1{
   font-family: 'Abel', sans-serif;
 }
 
-ul {
-  list-style-type: circle;
-}
-
 nav ul li {
   list-style-type: none;
 }
@@ -15,6 +11,8 @@ nav ul li {
 footer{
   list-style-type: none;
 }
+
+ul { margin: 0; padding: 0; }
 
 ul.browser-default {
   list-style-type: initial;
@@ -83,9 +81,39 @@ ul.browser-default {
   top: -50px;
 }
 
-.skills-table progress{
+.skills-table.progress{
   line-height: 14px;
+  display: flex;
+  justify-content: center;
 }
+
+.progress.determinate{
+  align-self: center;
+}
+
+th > div {
+    width: 100%;
+}
+
+.progress-front-label{
+  text-align: left;
+  align: left;
+  float: left;
+}
+
+.progress-end-label{
+  text-align: right;
+  align: right;
+  float: right;
+}
+
+footer a{
+  color: #222;
+}
+
+/*table, tr, td, th{
+  border: 1px solid black;
+}*/
 
 /*Color Looping Script*/
 @keyframes color-loop {
