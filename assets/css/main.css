@@ -58,6 +58,16 @@ ul.browser-default {
   background-color: #000000;
 }
 
+.resume-download{
+  text-transform: none;
+  margin-top: 10px;
+}
+
+.resume-download:hover{
+  color: #000000;
+  background-color: #000000;
+}
+
 .resume-text{
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -72,7 +82,6 @@ ul.browser-default {
 
 .portrait{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  float: left;
 }
 
 .resume-wrapper{
@@ -108,7 +117,8 @@ th > div {
 }
 
 footer a{
-  color: #222;
+  color: #fff;
+  text-decoration: underline;
 }
 
 /*table, tr, td, th{

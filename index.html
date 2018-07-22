@@ -17,7 +17,7 @@
 </head>
 <body>
 	<header>
-    <div class="navbar-fixed">
+    <!-- <div class="navbar-fixed">
       <nav>
   	    <div class="nav-wrapper blue darken-3">
   	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i style="margin-left:20px;"class="material-icons">menu</i></a>
@@ -35,7 +35,7 @@
   	      </ul>
   	    </div>
   	  </nav>
-    </div>
+    </div> -->
 		<div class="jumbotron" id="jumbotron">
 			</br>
 			<div class="jumbotron-content">
@@ -57,12 +57,36 @@
     <div class="row">
       <div class = "resume-wrapper">
         <div class="col s2 push-s1">
-          <img class="portrait" src="assets/img/portrait.jpg" alt="Profile" style="width:90%;height:auto;">
+          <div style="position:relative;">
+            <img class="portrait" src="assets/img/portrait.jpg" alt="Profile" style="width:90%;height:auto;">
+            <a href="https://linkedin.com/in/ryanpjohnston" class="waves-effect waves-light btn blue darken-3 resume-download"><i class="fa fa-download" aria-hidden="true"></i> Resume</a>
+          </div>
         </div>
         <div class = "resume-text col s8 push-s1">
           <div class="section">
             <h4>Work</h4>
-            <p style="padding-left:20px;"><b>r4 Technologies</b> (Summer 2016, Summer 2017)<br/>
+            <p style="padding-left:20px;"><b>r4 Technologies</b> (Summer 2017)<br/>
+            <em>Developer Operations Member</em></br>
+            </br>
+            Used industry-standard tools to implement effective solutions for managing and monitoring server environments.
+            <ul style="padding-left:40px;">
+              <li>Designed and implemented new proprietary alert system to interface developer operations with support teams.</li>
+              <li>Heavily customized JIRA and worked frequently with the API.</li>
+              <li>Automated setups, configurations, and deployments with Chef and AWS OpsWorks.</li>
+              <li>Designed monitoring tools for essential server information with Elasticsearch and Grafana.</li>
+              <li>Assisted in day-to-day operations including:</li>
+              <ul style="padding-left:60px;">
+                <li>Maintaining AWS account and resources</li>
+                <li>Troubleshooting issues in Linux</li>
+                <li>Diagnosing application issues across the full stack</li>
+              </ul>
+              <li>Scripted small tasks in AWS Lambda with Python.</li>
+              <li>Tracked code using Git and Gitflow.</li>
+              <li>Participated frequently in meetings demoing work and offering input.</li>
+              </li>
+            </ul>
+            </p>
+            <p style="padding-left:20px;"><b>r4 Technologies</b> (Summer 2016)<br/>
               <em>Developer Operations Intern</em></br>
             <ul style="padding-left:40px;">
               <li>Designed automation processes for continuous integration and delivery</li>
@@ -94,15 +118,15 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>Java</td>
+                  <td>Python</td>
                   <td>
                     <div class="progress">
-                      <div class="determinate" style="width: 80%"></div>
+                      <div class="determinate" style="width: 90%"></div>
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td>Python</td>
+                  <td>Java</td>
                   <td>
                     <div class="progress">
                       <div class="determinate" style="width: 80%"></div>
@@ -148,7 +172,7 @@
           <div class="section">
             <h4>Education</h4>
             <p style="padding-left:20px;"><b>University of Michigan</b> (2016 - Present)<br/>
-              <em>Computer Science Engineering B.S.E.</em></br>
+              <em>Computer Engineering B.S.E.</em></br>
             <ul style="padding-left:40px;">
               <li>UM::Autonomy Wilson Center Project Team, Business Team Member
                 <ul style="margin-left:2em">
@@ -163,11 +187,12 @@
           <div class = "divider"></div>
           <div class="section">
             <h4>Character</h4>
+            <p style="padding-left:20px;"><b>BSA Eagle Scout</b><br/>
             <p style="text-indent:20px;">
               <ul style="padding-left:40px;">
-                <li>BSA Eagle Scout- Managed a service project to add trail signs and record mileage for a local Nature Center. I recieved an official
-                    citation from the state of Connecticut for my work. I was also selected to attend a week-long leadership training program.</li>
-                <li>Lorem Ipsum Dolores Sit Amet</li>
+                <li>Managed a service project to add trail signs and record mileage for a local Nature Center and recieved an official
+                    citation from the state of Connecticut for my work.</li>
+                <li>Selected to attend a week-long leadership training program.</li>
               </ul>
             </p>
           </div>
