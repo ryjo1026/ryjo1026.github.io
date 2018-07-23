@@ -1,0 +1,16 @@
+{
+  "name": "ryanpjohnston.com",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "repository": "https://github.com/ryjo1026/ryjo1026.github.io.git",
+  "author": "Ryan Johnston <ryjo1026@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
