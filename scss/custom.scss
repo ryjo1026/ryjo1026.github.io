@@ -5,12 +5,16 @@
 
 // Variable overides
 $enable-rounded: false;
+$theme-colors: (
+  "primary": #0D3B66,
+);
 
 // Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 $jumbotron-height: 400px;
 $link-button-spacing: 60px;
+$section-separation: 32px;
 
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -52,4 +56,32 @@ h1 {
 
 .summary {
   padding-top: 50px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header hr {
+  width: 33%;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.skill-labels p{
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.progress {
+  margin-bottom: 50px;
+}
+
+.skills {
+  padding-top: $section-separation;
+  margin-top: $section-separation;
+  padding-bottom: $section-separation;
+  background-color: #f7f7f7;
+
 }
