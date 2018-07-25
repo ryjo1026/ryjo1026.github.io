@@ -6143,6 +6143,9 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700; }
 
+a {
+  color: #1446A0; }
+
 .display-4 {
   color: white; }
 
@@ -6203,3 +6206,12 @@ h1 {
   background-attachment: fixed;
   padding-top: 32px;
   padding-bottom: 32px; }
+
+.experience {
+  margin-top: 32px;
+  padding-top: 32px;
+  padding-bottom: 20px; }
+
+.experience-lth {
+  margin-top: 32px;
+  text-align: right; }
