@@ -57,6 +57,11 @@ a {
     background-color: #fff;
     transform:: scale(1.25);
 }
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #000;
+    transform:: scale(1.25);
+}
 
 .summary {
   padding-top: 50px;
@@ -104,10 +109,28 @@ a {
 .experience {
   margin-top: $section-separation;
   padding-top: $section-separation;
-  padding-bottom: 20px;
+  padding-bottom: $section-separation;
 }
 
 .experience-lth {
   margin-top: $section-separation;
+  text-align: right;
+}
+
+.education {
+  background-image: url("../assets/img/education_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: $section-separation;
+  padding-top: $section-separation;
+  padding-bottom: 200px;
+}
+
+.education h3, .education p {
+  color: white;
+}
+
+.section-header-right {
+  margin-bottom: $section-separation;
   text-align: right;
 }

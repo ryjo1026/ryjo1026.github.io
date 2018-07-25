@@ -6172,6 +6172,11 @@ a {
   background-color: #fff;
   transform: scale(1.25); }
 
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #000;
+  transform: scale(1.25); }
+
 .summary {
   padding-top: 50px; }
 
@@ -6210,8 +6215,23 @@ a {
 .experience {
   margin-top: 32px;
   padding-top: 32px;
-  padding-bottom: 20px; }
+  padding-bottom: 32px; }
 
 .experience-lth {
   margin-top: 32px;
+  text-align: right; }
+
+.education {
+  background-image: url("../assets/img/education_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 32px;
+  padding-top: 32px;
+  padding-bottom: 200px; }
+
+.education h3, .education p {
+  color: white; }
+
+.section-header-right {
+  margin-bottom: 32px;
   text-align: right; }
