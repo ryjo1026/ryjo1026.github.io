@@ -25,6 +25,10 @@ a {
   color: #1446A0;
 }
 
+.card {
+  border: none;
+}
+
 .display-4 {
   color: white;
 }
@@ -106,6 +110,10 @@ a {
   padding-bottom: $section-separation;
 }
 
+.projects .card-text {
+  min-height: 150px;
+}
+
 .experience {
   margin-top: $section-separation;
   padding-top: $section-separation;
@@ -118,7 +126,7 @@ a {
 }
 
 .education {
-  background-image: url("../assets/img/education_bg.jpg");
+  background-image: url("../assets/img/education_bg2.jpg");
   background-size: cover;
   background-attachment: fixed;
   margin-top: $section-separation;
@@ -126,8 +134,16 @@ a {
   padding-bottom: 200px;
 }
 
-.education h3, .education p {
+.education h3, .education p, , .education li{
   color: white;
+}
+
+.education a{
+  color: #3498db;
+}
+
+.education-text {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .section-header-right {
