@@ -1,2 +1,8 @@
-# ryjo1026.github.io
-Personal website and portfolio accessible at: [ryanpjohnston.com](http://ryanpjohnston.com). Currently [in development](https://github.com/ryjo1026/ryjo1026.github.io/tree/develop).
+# ryanpjohnston.com
+
+A personal website for displaying info about me and hosting some of my files.
+
+## Development
+
+To start the live reload server with automatic SASS compilation use:
+```gulp serve```
