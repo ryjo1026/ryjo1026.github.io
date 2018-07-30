@@ -1,0 +1,152 @@
+// Custom.scss
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+
+// Variable overides
+$enable-rounded: false;
+$theme-colors: (
+  "primary": #0D3B66,
+);
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$jumbotron-height: 400px;
+$link-button-spacing: 60px;
+$section-separation: 32px;
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #1446A0;
+}
+
+.card {
+  border: none;
+}
+
+.display-4 {
+  color: white;
+}
+
+.title {
+  text-align: center;
+  margin-top: $jumbotron-height/6;
+}
+
+.jumbotron {
+  background-image: url("../assets/img/jumbotron_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: $jumbotron-height;
+}
+
+.links {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.links button {
+  margin-left: $link-button-spacing/2;
+  margin-right: $link-button-spacing/2;
+}
+
+// Invert button colors and zoom on hover
+.btn-outline-light:hover {
+    color: #000;
+    background-color: #fff;
+    transform:: scale(1.25);
+}
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #000;
+    transform:: scale(1.25);
+}
+
+.summary {
+  padding-top: 50px;
+}
+
+.section-header-center {
+  text-align: center;
+}
+
+.section-header-center hr {
+  width: 33%;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.skill-labels p{
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.progress {
+  margin-bottom: 50px;
+}
+
+.skills {
+  margin-top: $section-separation;
+  padding-top: $section-separation;
+  padding-bottom: 20px;
+  background-color: #f7f7f7;
+}
+
+.section-header-left {
+  margin-bottom: $section-separation;
+}
+
+.projects {
+  background-image: url("../assets/img/projects_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: $section-separation;
+  padding-bottom: $section-separation;
+}
+
+.projects .card-text {
+  min-height: 150px;
+}
+
+.experience {
+  margin-top: $section-separation;
+  padding-top: $section-separation;
+  padding-bottom: $section-separation;
+}
+
+.experience-lth {
+  margin-top: $section-separation;
+  text-align: right;
+}
+
+.education {
+  background-image: url("../assets/img/education_bg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: $section-separation;
+  padding-top: $section-separation;
+  padding-bottom: 200px;
+}
+
+.education h3, .education p, , .education li{
+  color: white;
+}
+
+.education a{
+  color: #3498db;
+}
+
+.education-text {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-header-right {
+  margin-bottom: $section-separation;
+  text-align: right;
+}

@@ -1,24 +1,191 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<title>Ryan Johnston</title>
-		<link rel="stylesheet" type="text/css" href="theme.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <title>Ryan Johnston</title>
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="title">
+      <h1 class="display-4">Ryan Johnston</h1>
+    </div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/ryanpjohnston/"><button type="button" class="btn btn-outline-light"><i class="fab fa-linkedin-in"></i></button></a>
+      <a href="https://github.com/ryjo1026"><button type="button" class="btn btn-outline-light"><i class="fab fa-github"></i></button></a>
+      <a href="mailto:ryanpj@umich.edu"><button type="button" class="btn btn-outline-light"><i class="far fa-envelope"></i></button></a>
+    </div>
+  </div>
 
-	</head>
-	<body style="background: #2ECC71;">
-		<h1 style="
-		font-family: 'Abel', sans-serif;
-		font-size: 400%;
-		color: white;
-		text-align: center;
-		margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);">Full Website Coming Soon</h1>
+  <!-- Introduction -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="assets/img/portrait.jpg" class="img-fluid" alt="portrait">
+      </div>
+      <div class="col-9 summary">
+        <p class="lead">Hi, my name is <b>Ryan Johnston</b>.</p>
+        <p>
+          I'm a junior at University of Michigan pursuing a degree in Computer Science Engineering.
+          I've been coding for over six years and have had a lot of experience in industry through internships and jobs.
+          Engineering has taught me a lot about creative problem-solving and writing efficient code.
+          I'm a quick learner and enthusiastic about expanding my knowledge of computer science through a summer internship.
+        </p>
+      </div>
+    </div>
+  </div>
 
-	</body>
+  <!-- Skills -->
+  <div class="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col section-header-center">
+          <h3>Skills</h3>
+          <hr noshade/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="row skill-labels">
+            <div class="col"><p>Less Proficient</p></div>
+            <div class="col" style="text-align:right"><p>More Proficient</p></div>
+          </div>
+          <div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">C++</div></div>
+          <div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML/CSS/JS</div></div>
+          <div class="progress"><div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">Java</div></div>
+        </div>
+        <div class="col">
+          <!-- <div class="row skill-labels">
+            <div class="col"><p>&nbsp</p></div>
+          </div> -->
+          <div class="row skill-labels">
+            <div class="col"><p>Less Proficient</p></div>
+            <div class="col" style="text-align:right"><p>More Proficient</p></div>
+          </div>
+          <div class="progress"><div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Python</div></div>
+          <div class="progress"><div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">ReactJS</div></div>
+          <div class="progress"><div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">MATLAB</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col section-header-left">
+          <h3>Projects</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">IoT Asset Tracker</h5>
+              <p class="card-text">The IoT Asset Tracker is a proof-of-concept decentralized application designed to run of the Ethereum platform.
+                It’s an adaptation on a simple bidding application made to allow IoT device owners to list their data for sale.
+                The front-end was designed with ReactJS and it connects to a custom smart contract written in Solidity.</p>
+              <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> Source</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">ryanpjohnston.com</h5>
+              <p class="card-text">I designed this site from scratch using HTML5/CSS3 and the Bootstrap framework with the goal of making it lightweight and easy to navigate.
+                This site is a continual work-in-progress and I try to update it often with new accomplishments and different design trends that interest me.</p>
+              <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> Source</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="experience">
+    <div class="container">
+      <div class="row">
+        <div class="col section-header-center">
+          <h3>Experience</h3>
+          <hr noshade/>
+        </div>
+      </div>
+      <div class="row justify-content-start">
+        <div class="col-sm-2">
+          <img src="assets/img/logo-r4.png" class="img-fluid" alt="r4-logo">
+        </div>
+        <div class="col-sm-7">
+          <p class="lead"><a href="https://r4.ai">r4 Technologies</a> | Developer Operations Intern | Summer 2016-18</p>
+          <p>
+            r4 is a data science company leading in cross-enterprise artificial intelligence.
+            For three summers I have worked in developer operations designing and implementing tools for its server infrastructure.
+            Many of my solutions are used daily on production environments.
+            This experience taught me a lot about how to effectively automate processes as well as general Linux troubleshooting.
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-end experience-lth">
+        <div class="col-sm-7">
+          <p class="lead"><a href="http://cs.lth.se">Lunds Tekniska Högskola</a> | Research Assistant | Summer 2018</p>
+          <p>
+            Lunds Tekniska Högskola (LTH) is a top-ranking University in Sweden.
+            For two months I researched blockchain technology and decentralized applications, specifically with the Ethereum platform.
+            In addition to designing the IoT Asset Tracker described above, we also automated setup of a private Ethereum network and
+            researched many of the posible use cases for Ethereum as well as its short comings.
+            We presented our findings to the faculty and wrote detailed documentation for further work.
+          </p>
+        </div>
+        <div class="col-sm-2">
+          <img src="assets/img/logo-lth.png" class="img-fluid" alt="lth-logo" style="padding-top:20px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="education">
+    <div class="container">
+      <div class="row">
+        <div class="col section-header-left">
+          <h3>Education</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="assets/img/logo-um.png" class="img-fluid" alt="um-logo">
+        </div>
+        <div class="col-sm-10 education-text">
+          <p class="lead">University of Michigan | Computer Science B.S.E | 2016-<span style="color: #aaa">2020</span></p>
+          <ul>
+            <li><b>Relevant Coursework:</b> Data Structures & Algorithms (EECS 281), Programming and Data Structures (EECS 280), Theory of Computation (EECS 376)</li>
+            <li><b>UM::Autonomy:</b> UM::Autonomy is a student project team focused on making an autonomous boat.
+              As a member of the business team I have lead the design of a new website: <a href="https://umautonomy.com">umautonomy.com</a> and completely redesigned our sponsorship material.
+              I also carry out various tasks such as reaching out to sponsors and coordinating with the University.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "links" style="padding-top: 50px; padding-bottom: 50px">
+    <a href="https://www.linkedin.com/in/ryanpjohnston/"><button type="button" class="btn btn-outline-dark"><i class="fab fa-linkedin-in"></i></button></a>
+    <a href="https://github.com/ryjo1026"><button type="button" class="btn btn-outline-dark"><i class="fab fa-github"></i></button></a>
+    <a href="mailto:ryanpj@umich.edu"><button type="button" class="btn btn-outline-dark"><i class="far fa-envelope"></i></button></a>
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
 </html>
