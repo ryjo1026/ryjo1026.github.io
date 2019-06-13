@@ -10,7 +10,7 @@ $theme-colors: (
 );
 
 // Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 $jumbotron-height: 400px;
 $link-button-spacing: 60px;
@@ -39,7 +39,7 @@ a {
 }
 
 .jumbotron {
-  background-image: url("../assets/img/jumbotron_bg.jpg");
+  background-image: url("../img/jumbotron_bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   min-height: $jumbotron-height;
@@ -103,7 +103,7 @@ a {
 }
 
 .projects {
-  background-image: url("../assets/img/projects_bg.jpg");
+  background-image: url("../img/projects_bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding-top: $section-separation;
@@ -130,7 +130,7 @@ a {
 }
 
 .education {
-  background-image: url("../assets/img/education_bg2.jpg");
+  background-image: url("../img/education_bg2.jpg");
   background-size: cover;
   background-attachment: fixed;
   margin-top: $section-separation;
