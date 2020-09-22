@@ -1,23 +1,65 @@
 {
-  "name": "ryanpjohnston.com",
-  "version": "1.0.0",
-  "description": "My personal website",
-  "repository": "https://github.com/ryjo1026/ryjo1026.github.io.git",
-  "author": "Ryan Johnston <ryjo1026@gmail.com>",
-  "license": "Apache-2.0",
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
   "dependencies": {
-    "bootstrap": "^4.1.2"
+    "@types/react-helmet": "^6.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "bulma": "^0.9.0",
+    "gatsby": "^2.24.63",
+    "gatsby-image": "^2.4.19",
+    "gatsby-plugin-feed": "^2.5.12",
+    "gatsby-plugin-google-analytics": "^2.3.14",
+    "gatsby-plugin-manifest": "^2.4.30",
+    "gatsby-plugin-offline": "^3.2.28",
+    "gatsby-plugin-react-helmet": "^3.3.11",
+    "gatsby-plugin-sass": "^2.3.13",
+    "gatsby-plugin-sharp": "^2.6.36",
+    "gatsby-plugin-styled-components": "^3.3.11",
+    "gatsby-remark-bulma": "^1.0.1",
+    "gatsby-remark-copy-linked-files": "^2.3.15",
+    "gatsby-remark-images": "^3.3.30",
+    "gatsby-remark-prismjs": "^3.5.13",
+    "gatsby-remark-responsive-iframe": "^2.4.14",
+    "gatsby-remark-smartypants": "^2.3.11",
+    "gatsby-source-filesystem": "^2.3.30",
+    "gatsby-transformer-remark": "^2.8.35",
+    "gatsby-transformer-sharp": "^2.5.15",
+    "node-sass": "^4.14.1",
+    "prismjs": "^1.21.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.24.6",
-    "node-sass": "^4.13.1",
-    "npm-run-all": "^4.1.5"
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "prettier": "2.1.1"
   },
-  "scripts": {
-    "build": "node-sass --omit-source-map-url assets/scss --output assets/css",
-    "watch": "run-p watch:*",
-    "watch:css": "$npm_execpath run build --watch",
-    "watch:browser-sync": "browser-sync start --server --files *",
-    "start": "run-s watch"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
