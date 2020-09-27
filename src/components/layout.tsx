@@ -1,48 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
+import Header from "./header"
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
+type layoutProps = {
+  title: string,
+  children: HTMLDivElement
+}
 
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
+const Layout = ({ title, children }: layoutProps) => {
+    
   return (
     <div
       style={{
@@ -50,13 +15,8 @@ const Layout = ({ location, title, children }) => {
         marginRight: `auto`,
       }}
     >
-      <header>{header}</header>
+      <header><Header title={title} /></header>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
     </div>
   )
 }
