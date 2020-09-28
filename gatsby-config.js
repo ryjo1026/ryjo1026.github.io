@@ -30,7 +30,17 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 300,
+              withWebp: true,
+              showCaptions: true,
+              markdownCaptions: true,
+              wrapperStyle: () => {
+                return `
+                  float: left;
+                  margin-right: 2rem;
+                  max-width: 300px;
+                `;
+              },
             },
           },
           {
@@ -45,19 +55,17 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [`gatsby-remark-bulma`],
-      },
-    },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-123674575-1`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-codegen',
+      options: {},
     },
     `gatsby-plugin-feed`,
     {

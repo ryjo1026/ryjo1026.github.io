@@ -72,14 +72,14 @@ const Header = ({ title }: navigationProps) => {
                 const divider = <NavbarDivider> / </NavbarDivider>;
                 if (idx === 0) {
                   return (
-                    <div style={{ display: 'flex' }}>
+                    <div style={{ display: 'flex' }} key={l.name}>
                       <NavbarItem to={l.url}>{l.name}</NavbarItem>
                     </div>
                   );
                 }
 
                 return (
-                  <div style={{ display: 'flex' }}>
+                  <div style={{ display: 'flex' }} key={l.name}>
                     {divider}
                     <NavbarItem to={l.url}>{l.name}</NavbarItem>
                   </div>

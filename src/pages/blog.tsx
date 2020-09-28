@@ -1,7 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import { IPageProps, IPageQuery } from '../types/page-props';
+import { IPageProps } from '../types/page-props';
+import { PageQuery } from './__generated__/PageQuery';
 
 import DeepPropertyAccess from '../utils/deep-property-access';
 
@@ -33,8 +34,8 @@ class BlogIndex extends React.Component<IPageQuery & IPageProps> {
       <Layout title={siteTitle}>
         <SEO title="All posts" />
         {posts.map(post => {
-          // const title = post.frontmatter.title || post.fields.slug;
-          return <PostPreview data={post} />;
+          const slug = DeepPropertyAccess.get(post, 'fields', 'slug');
+          return <PostPreview postData={post} key={slug} />;
         })}
       </Layout>
     );
@@ -43,8 +44,12 @@ class BlogIndex extends React.Component<IPageQuery & IPageProps> {
 
 export default BlogIndex;
 
+interface IPageQuery {
+  data: PageQuery;
+}
+
 export const pageQuery = graphql`
-  query {
+  query PageQuery {
     site {
       siteMetadata {
         title
@@ -60,6 +65,13 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          featuredImage {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }

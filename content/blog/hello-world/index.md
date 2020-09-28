@@ -1,7 +1,8 @@
 ---
-title: Hello World
-date: '2019-05-04'
-description: 'This is my first post on my new fake blog! How exciting!'
+title: Hello World!
+date: '2020-09-27'
+description: 'How I used GatsbyJS to redesign my website and make this blog'
+featuredImage: gatsby-logo.png
 ---
 
 This is my first post on my new fake blog! How exciting!
@@ -18,3 +19,7 @@ Oh, and here's a great quote from this Wikipedia on
 > wrapped in plastic, and vacuum packed. From the salt curing process, the
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
 > firm-textured, round yolk that is bright orange-red in color.
+
+Notes:
+
+- codegen plugin for typescript
