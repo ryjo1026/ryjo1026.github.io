@@ -37,7 +37,7 @@ const PostPreview = ({ postData }: PostPreviewProps) => {
     DeepPropertyAccess.get(
       postData,
       'frontmatter',
-      'featuredImage',
+      'thumbnailImage',
       'childImageSharp',
       'fluid'
     ) ||

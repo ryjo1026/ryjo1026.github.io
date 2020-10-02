@@ -15,10 +15,27 @@ export interface BlogPostBySlug_site {
   siteMetadata: BlogPostBySlug_site_siteMetadata | null;
 }
 
+export interface BlogPostBySlug_markdownRemark_frontmatter_bannerImage_childImageSharp_fluid {
+  base64: string | null;
+  aspectRatio: number;
+  src: string;
+  srcSet: string;
+  sizes: string;
+}
+
+export interface BlogPostBySlug_markdownRemark_frontmatter_bannerImage_childImageSharp {
+  fluid: BlogPostBySlug_markdownRemark_frontmatter_bannerImage_childImageSharp_fluid | null;
+}
+
+export interface BlogPostBySlug_markdownRemark_frontmatter_bannerImage {
+  childImageSharp: BlogPostBySlug_markdownRemark_frontmatter_bannerImage_childImageSharp | null;
+}
+
 export interface BlogPostBySlug_markdownRemark_frontmatter {
   title: string | null;
   date: any | null;
   description: string | null;
+  bannerImage: BlogPostBySlug_markdownRemark_frontmatter_bannerImage | null;
 }
 
 export interface BlogPostBySlug_markdownRemark {

@@ -31,7 +31,7 @@ class BlogIndex extends React.Component<IPageQuery & IPageProps> {
     }
 
     return (
-      <Layout title={siteTitle}>
+      <Layout title={siteTitle} isHome>
         <SEO title="All posts" />
         {posts.map(post => {
           const slug = DeepPropertyAccess.get(post, 'fields', 'slug');
@@ -65,7 +65,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
-          featuredImage {
+          thumbnailImage {
             childImageSharp {
               fluid(maxWidth: 800) {
                 ...GatsbyImageSharpFluid

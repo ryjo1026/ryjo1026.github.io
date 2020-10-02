@@ -2,7 +2,7 @@
 title: Hello World!
 date: '2020-09-27'
 description: 'How I used GatsbyJS to redesign my website and make this blog'
-featuredImage: gatsby-logo.png
+thumbnailImage: gatsby-logo.png
 ---
 
 This is my first post on my new fake blog! How exciting!

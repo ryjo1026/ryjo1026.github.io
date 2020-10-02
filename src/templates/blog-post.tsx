@@ -7,6 +7,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import { BlogPostBySlug } from './__generated__/BlogPostBySlug';
+import DeepPropertyAccess from '../utils/deep-property-access';
 
 type BlogPostTemplateProps = {
   data: BlogPostBySlug;
@@ -15,11 +16,18 @@ type BlogPostTemplateProps = {
 
 const BlogPostTemplate = ({ data, pageContext }: BlogPostTemplateProps) => {
   const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
   const { previous, next } = pageContext;
 
+  const bannerImage = DeepPropertyAccess.get(
+    post,
+    'frontmatter',
+    'bannerImage',
+    'childImageSharp',
+    'fluid'
+  );
+
   return (
-    <Layout title={siteTitle}>
+    <Layout title={post.frontmatter.title} bannerImage={bannerImage}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -103,6 +111,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        bannerImage {
+          childImageSharp {
+            fluid(maxWidth: 3200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
